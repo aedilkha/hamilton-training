@@ -5,10 +5,8 @@ A simple 2-minute presentation for the Hamilton training class, Day 1.
 ## Slides
 
 1. **Title** — Why is the Sky Blue?
-2. **Sunlight isn't just white** — It's a mix of all rainbow colors
-3. **Meet: Rayleigh Scattering** — How molecules scatter light
-4. **Bonus: Why are sunsets red?** — The same physics, longer path
-5. **Summary** — Key takeaways
+2. **Light comes in different wavelengths** — Full color spectrum with nm ranges (380–750 nm) and short → long wavelength arrow
+3. **Bonus: Why are sunsets orange & red?** — Same physics, longer path
 
 ## Files
 
