@@ -104,50 +104,6 @@ const LGRAY = "F0F4F8";
   });
 }
 
-// ── Slide 3: Why blue scatters ───────────────────────────────────────────────
-{
-  const s = pres.addSlide();
-  s.background = { color: LGRAY };
-
-  s.addText("Short wavelengths scatter more", {
-    x: 0.5, y: 0.25, w: 9, h: 0.7,
-    fontSize: 28, bold: true, color: DEEP, fontFace: "Georgia", margin: 0
-  });
-
-  // Simple visual: sun ray hits atmosphere, blue bounces, red goes through
-  // Sun
-  s.addShape(pres.shapes.OVAL, { x: 0.3, y: 1.3, w: 1.0, h: 1.0, fill: { color: GOLD }, line: { color: GOLD } });
-  s.addText("SUN", { x: 0.3, y: 1.3, w: 1.0, h: 1.0, fontSize: 10, bold: true, color: DEEP, align: "center", valign: "middle", margin: 0 });
-
-  // White ray going right
-  s.addShape(pres.shapes.LINE, { x: 1.35, y: 1.8, w: 1.5, h: 0, line: { color: "AAAAAA", width: 3 } });
-
-  // Atmosphere blob
-  s.addShape(pres.shapes.OVAL, { x: 2.9, y: 1.35, w: 1.5, h: 0.9, fill: { color: "D0E8FF" }, line: { color: SKY, width: 2 } });
-  s.addText("atmosphere\nmolecule", { x: 2.9, y: 1.35, w: 1.5, h: 0.9, fontSize: 9, color: DEEP, align: "center", valign: "middle", margin: 0 });
-
-  // Blue scatters up/down
-  s.addShape(pres.shapes.LINE, { x: 3.65, y: 1.35, w: 0, h: -0.9, line: { color: "3B4FE0", width: 3 } });
-  s.addShape(pres.shapes.LINE, { x: 3.65, y: 2.25, w: 0, h:  0.9, line: { color: "3B4FE0", width: 3 } });
-  s.addText("Blue (450 nm)\nscatters away →\nfills the whole sky", { x: 2.7, y: 3.25, w: 2.5, h: 0.8, fontSize: 12, color: "3B4FE0", bold: true, fontFace: "Calibri", align: "center", margin: 0 });
-
-  // Red passes through
-  s.addShape(pres.shapes.LINE, { x: 4.45, y: 1.8, w: 2.8, h: 0, line: { color: "E8000D", width: 3 } });
-  s.addText("Red (700 nm)\npasses straight through", { x: 5.1, y: 0.85, w: 2.5, h: 0.45, fontSize: 12, color: "E8000D", bold: true, fontFace: "Calibri", align: "center", margin: 0 });
-
-  // Eye at right
-  s.addShape(pres.shapes.OVAL, { x: 7.4, y: 1.5, w: 0.7, h: 0.6, fill: { color: "FFFFFF" }, line: { color: GRAY, width: 1 } });
-  s.addShape(pres.shapes.OVAL, { x: 7.6, y: 1.62, w: 0.3, h: 0.3, fill: { color: DEEP }, line: { color: DEEP } });
-  s.addText("your eye", { x: 7.2, y: 2.15, w: 1.2, h: 0.3, fontSize: 10, color: GRAY, fontFace: "Calibri", align: "center", margin: 0 });
-
-  // Summary box
-  s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y: 4.3, w: 9, h: 0.95, fill: { color: DEEP }, line: { color: DEEP } });
-  s.addText("Blue light (short wavelength) bounces off molecules in all directions → your eyes see blue everywhere you look up.", {
-    x: 0.65, y: 4.35, w: 8.7, h: 0.85,
-    fontSize: 14, color: WHITE, fontFace: "Calibri", valign: "middle", margin: 0
-  });
-}
-
 // ── Slide 4: Bonus sunset + summary ─────────────────────────────────────────
 {
   const s = pres.addSlide();
